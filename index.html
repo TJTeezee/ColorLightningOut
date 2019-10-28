@@ -3,14 +3,16 @@
 <html>
 <head></head>
 
-<body></body>
+<body>
+  <div class="contactUs">
+  </body>
   
   <script src="https://todddev-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
   
   <script>
     let oAuth = '3MVG9tzQRhEbH_K0kK6T2rszGe7rnZXVQd9JXU1ZTd06rkELg9hLV2VoeZfWjoSWIVPzgk1VtIbxnOXsieZCh';
     $Lightning.use("c:colorContactUsOut", () => {
-      $Lightning.createComponent("c:colorContactUs", {}, "lightning", undefined)
+      $Lightning.createComponent("c:colorContactUs", {}, "contactUs", () => {console.log("Contact Us Created")})
     }, 'https://todddev-dev-ed.lightning.force.com', oAuth)
   </script>
 </html>
