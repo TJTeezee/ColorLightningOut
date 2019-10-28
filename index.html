@@ -4,4 +4,12 @@
 <head></head>
 
 <body></body>
+  
+  <script src="https://todddev-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+  
+  <script>
+    $Lightning.use("colorContactUsOut", () => {
+      $Lightning.createComponent("c:colorContactUs", {}, "lightning", undefined)
+    })
+  </script>
 </html>
