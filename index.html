@@ -8,8 +8,9 @@
   <script src="https://todddev-dev-ed.lightning.salesforce.com/lightning/lightning.out.js"></script>
   
   <script>
+    let oAuth = '3MVG9tzQRhEbH_K0kK6T2rszGe7rnZXVQd9JXU1ZTd06rkELg9hLV2VoeZfWjoSWIVPzgk1VtIbxnOXsieZCh';
     $Lightning.use("c:colorContactUsOut", () => {
       $Lightning.createComponent("c:colorContactUs", {}, "lightning", undefined)
-    }, 'https://todddev-dev-ed.lightning.force.com')
+    }, 'https://todddev-dev-ed.lightning.force.com', oAuth)
   </script>
 </html>
