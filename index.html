@@ -10,8 +10,13 @@
   <script src="https://todddevcomtest-developer-edition.um5.force.com/communitySandbox/lightning/lightning.out.js"></script>
   
   <script>
-    $Lightning.use("c:ColorContactUsOut", () => {
-      $Lightning.createComponent("c:colorContactUs", {}, "contactUs", () => {console.log("Contact Us Created")})
-    }, 'https://todddevcomtest-developer-edition.um5.force.com')
+    $Lightning.use("c:ColorContactUsOut", function() {
+      $Lightning.createComponent("c:colorContactUs", 
+                                 {}, 
+                                 "contactUs", 
+                                 function(cmp) {console.log("Contact Us Created")}
+                                );
+    }, 
+    'https://todddevcomtest-developer-edition.um5.force.com/communitySandbox/')
   </script>
 </html>
